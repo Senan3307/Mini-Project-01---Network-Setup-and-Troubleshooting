@@ -57,6 +57,9 @@ Server 1  | 172.16.0.3  |  172.16.0.1
 
 **Connect the switches to the router with ethernet cables**
 
+  The router has been connected to the switch using ethernet cables. However, it still has a red mark, indicating unsuccessful communication. 
+![Alt text](Router_Added_Network.png)
+
 **Configure IPs on router**
 
 **Set Port Status to ON on router**
