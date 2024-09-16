@@ -10,33 +10,34 @@ Another use case could be tech giants such as Google. Google has offices and dat
 
 **Choose software and hardware**
   
-  Decide what the objective is. In this case, it would be to create a network between multiple LANs. Thus, we would require switches, routers, end devices, WAP, ethernet cables, servers, etc. 
+  Decide what the objective is. In this case, it would be to create a network between multiple LANs and establish communciation between various devices. Thus, we would require switches, routers, end devices, WAP, ethernet cables, servers, etc. 
 
 **IP assignments**
   
   It would be most efficient to assign IPs beforehand to minimize confusion and human error. For this project, network ranges 192.168.0.0/26 and 172.16.0.0/24 have been assigned. 
-Device  | IP  | Default Gatway 
-------------- | ------------- | --------------
+Device  | IP  | Default Gatway | Subnet Mask
+------------- | ------------- | -------------- | ------------
 Router 0 (Gig0/0)  | 192.168.0.1  | 
-PC0  | 192.168.0.2  |  192.168.0.1 
-PC1  | 192.168.0.3  |  192.168.0.1 
-PC2  | 192.168.0.4  |  192.168.0.1 
-Tablet PC1  | 192.168.0.5  |  192.168.0.1 
-Smartphone  | 192.168.0.6  |  192.168.0.1 
+PC0  | 192.168.0.2  |  192.168.0.1 |  255.255.255.192
+PC1  | 192.168.0.3  |  192.168.0.1 |  255.255.255.192 
+PC2  | 192.168.0.4  |  192.168.0.1 |  255.255.255.192 
+Tablet PC1  | 192.168.0.5  |  192.168.0.1 |  255.255.255.192
+Smartphone  | 192.168.0.6  |  192.168.0.1 |  255.255.255.192
 Router 0 (Gig0/1)  | 172.16.0.1  |  
-Server 0  | 172.16.0.2  |  172.16.0.1 
-Server 1  | 172.16.0.3  |  172.16.0.1 
+Server 0  | 172.16.0.2  |  172.16.0.1 |  255.255.255.0
+Server 1  | 172.16.0.3  |  172.16.0.1 |  255.255.255.0 
 
 **Add end devices (PCs/laptops/printers/tablets/etc)**
   
-  Once an end device has been added, as seen in the image, you would then assign the IP address. The subnet mask will automatically be assigned in packet tracer after assigning an IP. 
+  Once an end device (Laptop, PC, etc) has been added, as seen in the image, you would then manually assign the IP address. On a Mac, you would go to system settings -> network -> details -> TCP/IP -> set configure IPv4 to "Manual" -> enter IP address and subnet mask as listed in the table above. 
 ![Alt text](IP_Assignment_PC.png)
-  You would also need to assign the default gateway to establish communication between the end device and the router. Otherwise, the end device would not be able to recognize which channel to communicate through once a network has been established among multiuple LANs. 
+  You would also need to assign the default gateway to establish communication between the end device and the eventual addition of a router. Otherwise, the end device would not be able to recognize which channel to communicate through once a network has been established among multiuple LANs. To do this, change "router" to the assigned value as listed int he above table. 
 ![Alt text](Default_Gateway_Assignment_PC.png)
 
 **Add switch**
 
-  As seen in the image below, you then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The green triangles in packet tracer indicated successful communication between the switch and the end device. 
+  You then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The switch must be connected to a power outlet in order for it to turn on. The switches we have been using does not have a on-off button so it should automatically turn on once plugged in. 
+  The green triangles in packet tracer indicated successful communication between the switch and the end device. 
 ![Alt text](PC_to_Switch_Ethernet.png)
 
 **Add WAP**
@@ -61,23 +62,21 @@ Server 1  | 172.16.0.3  |  172.16.0.1
 
 **Add a router to talk to different networks**
 
-  A router has been added, however, it is currently disconnected from the network. 
+  A router has been added, however, it is currently disconnected from the network. The router must also be connected to a power outlet and, contrary to the switch, it should have a on-off switch so make sure to turn the router on. 
 ![Alt text](Added_Router.png)
-
-**Connect the switches to the router with ethernet cables**
-
-  The router has been connected to the switch using ethernet cables. However, it still has a red mark, indicating unsuccessful communication. 
-![Alt text](Router_Added_Network.png)
 
 **Configure IPs on router**
 
+  It will take a moment for the router to boot up as well. Once the router is turned on, you must first connect a ethernet cable to the port labeled "console" to configure the IP address on the router. 
+  Once the IP address for the router itself has been configrued, the IP address for each specific LAN port on the router must also be configured. 
+  Once the port has been configured, connect the switch to the router using an ethernet cable. Make sure to connect the ethernet cable to the correct port as assigned earlier. 
   I have configured the IP on the router. However, it is still not communicating with the switch. 
 ![Alt text](Config_Router0.png)
 
-**Set Port Status to ON on router**
+**Connect the switches to the router with ethernet cables**
 
-  Now, with the port status turned on on router, the router is successfully communicating with the switch. One way I could check if it's actually successful is by pinging the router from any end device. 
-![Alt text](Turn_on_router.png)
+  It will take a moment for the router to boot up as well. Once the router is turned on, you must first connect a ethernet cable to the port labeled "console" to configure the IP address on the router. 
+![Alt text](Router_Added_Network.png)
 
 **LAN Added**
 
