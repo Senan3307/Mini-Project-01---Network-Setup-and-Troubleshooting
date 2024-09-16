@@ -52,6 +52,9 @@ Server 1  | 172.16.0.3  |  172.16.0.1
 
 **Add a router to talk to different networks**
 
+  A router has been added, however, it is currently disconnected from the network. 
+![Alt text](Added_Router.png)
+
 **Connect the switches to the router with ethernet cables**
 
 **Configure IPs on router**
