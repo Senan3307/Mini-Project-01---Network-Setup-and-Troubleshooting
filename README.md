@@ -22,10 +22,12 @@ Server 1  | 172.16.0.3  |  172.16.0.1
   
   Once an end device has been added, as seen in the image, you would then assign the IP address. The subnet mask will automatically be assigned in packet tracer after assigning an IP. 
 ![Alt text](IP_Assignment_PC.png)
+  You would also need to assign the default gateway to establish communication between the end device and the router. Otherwise, the end device would not be able to recognize which channel to communicate through once a network has been established among multiuple LANs. 
+![Alt text](Default_Gateway_Assignment_PC.png)
 
-Add switch
+**Add switch**
 
-As seen in the image below, you then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The green triangles in packet tracer indicated successful communication between the switch and the end device. 
+  As seen in the image below, you then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The green triangles in packet tracer indicated successful communication between the switch and the end device. 
 ![Alt text](PC_to_Switch_Ethernet.png)
 
 Add mobile devices
