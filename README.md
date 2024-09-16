@@ -16,9 +16,9 @@ Router 0 (Gig0/1)  | 172.16.0.1  |
 Server 0  | 172.16.0.2  |  172.16.0.1 
 Server 1  | 172.16.0.3  |  172.16.0.1 
 
-https://github.com/Senan3307/Mini-Project-01---Network-Setup-and-Troubleshooting/blob/e6ec0538289649c9638925073cf62a6574bda3bc/IP_Assignment_PC.png
-
 Add end devices (PCs/laptops/printers/tablets/etc)
+Once an end device has been added, as seen in the image, you would then assign the IP address. The subnet mask will automatically be assigned in packet tracer after assigning an IP. 
+![Alt text](IP_Assignment_PC.png)
 
 Add switch
 
