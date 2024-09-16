@@ -70,5 +70,12 @@ Server 1  | 172.16.0.3  |  172.16.0.1
   Now, with the part status turned on on router, the router is successfully communicating with the switch. One way I could check if it's actually successful is by pinging the router from any end device. 
 ![Alt text](Turn_on_router.png)
 
-**Set default gateway on all end devices/hosts
-**
+**LAN Added**
+
+  I have now added another LAN using the same exact steps as before, however, using different network ranges. I have added a new switch and two servers. 
+![Alt text](Added_LAN.png)
+
+**Set default gateway to all end devices**
+
+  As done in the "Add end devices" step, I have configured all the default gateways on the network. However, we have to be careful of which router port used in order to configure default gateways. 
+![Alt text](Added_LAN.png)
