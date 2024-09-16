@@ -68,7 +68,7 @@ Server 1  | 172.16.0.3  |  172.16.0.1
 
 **Set Port Status to ON on router**
 
-  Now, with the part status turned on on router, the router is successfully communicating with the switch. One way I could check if it's actually successful is by pinging the router from any end device. 
+  Now, with the port status turned on on router, the router is successfully communicating with the switch. One way I could check if it's actually successful is by pinging the router from any end device. 
 ![Alt text](Turn_on_router.png)
 
 **LAN Added**
