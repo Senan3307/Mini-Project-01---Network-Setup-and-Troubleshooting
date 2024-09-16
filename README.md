@@ -6,7 +6,7 @@ Choose software and hardware
 IP assignments
   It would be most efficient to assign IPs beforehand to minimize confusion and human error. For this project, network ranges 192.168.0.0/26 and 172.16.0.0/24 have been assigned. 
 Device  | IP  | Default Gatway 
-------------- | -------------
+------------- | ------------- | --------------
 Router 0 (Gig0/0)  | 192.168.0.1  | 
 PC0  | 192.168.0.2  |  192.168.0.1 
 PC1  | 192.168.0.3  |  192.168.0.1 
