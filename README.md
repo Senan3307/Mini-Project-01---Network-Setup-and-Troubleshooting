@@ -21,6 +21,7 @@ Add end devices (PCs/laptops/printers/tablets/etc)
 Add switch
 
 Connect the end devices to the switch with ethernet cables
+![Alt text](images/PC_to_Switch_Ethernet.png)
 
 Add mobile devices
 
