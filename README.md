@@ -20,7 +20,7 @@ Add end devices (PCs/laptops/printers/tablets/etc)
 
 Add switch
 
-Connect the end devices to the switch with ethernet cables
+As seen in the image below, you then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The green triangles in packet tracer indicated successful communication between the switch and the end device. 
 ![Alt text](PC_to_Switch_Ethernet.png)
 
 Add mobile devices
