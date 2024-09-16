@@ -1,8 +1,14 @@
 # Mini-Project-01---Network-Setup-and-Troubleshooting
 
 Choose software and hardware
+  Decide what the objective is. In this case, it would be to create a network between multiple LANs. Thus, we would require switches, routers, end devices, WAP, ethernet cables, servers, etc. 
 
 IP assignments
+  It would be most efficient to assign IPs beforehand to minimize confusion and human error. For this project, network ranges 192.168.0.0/26 and 172.16.0.0/24 have been assigned. 
+Device  | IP
+------------- | -------------
+Default Gateway (Router)  | 192.168.0.1
+Default Gateway (Router)  | 172.16.0.1
 
 Add end devices (PCs/laptops/printers/tablets/etc)
 
