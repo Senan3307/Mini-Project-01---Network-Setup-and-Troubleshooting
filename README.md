@@ -30,8 +30,6 @@ Server 1  | 172.16.0.3  |  172.16.0.1
   As seen in the image below, you then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The green triangles in packet tracer indicated successful communication between the switch and the end device. 
 ![Alt text](PC_to_Switch_Ethernet.png)
 
-**Add mobile devices**
-
 **Add WAP**
 
   As shown in the image, a WAP has been added. However, without ethernet cables it is not connected to the switch, which means it isn't connected to the network. 
@@ -42,14 +40,23 @@ Server 1  | 172.16.0.3  |  172.16.0.1
   Now, using an ethernet cable, the access point is communicating successfully with the switch, as indicated by the green trianlge. 
 ![Alt text](Accesspoint_switch.png)
 
+**Add mobile devices**
+
+  Now, mobile devices have been added. 
+![Alt text](Access_point_mobile_devices.png)
+
 **Set IP address on end devices (mobile devices included)**
+  
+  Similar to what I have done before, I have configured the IP addresses of all end devices. 
+![Alt text](IP_Assignment_End_Devices.png)
 
-Add a router to talk to different networks
+**Add a router to talk to different networks**
 
-Connect the switches to the router with ethernet cables
+**Connect the switches to the router with ethernet cables**
 
-Configure IPs on router
+**Configure IPs on router**
 
-Set Port Status to ON on router
+**Set Port Status to ON on router**
 
-Set default gateway on all end devices/hosts
+**Set default gateway on all end devices/hosts
+**
