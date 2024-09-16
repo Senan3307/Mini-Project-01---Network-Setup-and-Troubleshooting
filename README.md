@@ -34,7 +34,11 @@ Add mobile devices
 
 Add WAP
 
+  As shown in the image, a WAP has been added. However, without ethernet cables it is not connected to the switch, which means it isn't connected to the network. 
+![Alt text](WAP.png)
+
 Connect WAP to a switch
+
 
 Set IP address on end devices (mobile devices included)
 
