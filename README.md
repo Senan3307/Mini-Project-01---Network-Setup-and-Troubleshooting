@@ -5,17 +5,16 @@ Choose software and hardware
 
 IP assignments
   It would be most efficient to assign IPs beforehand to minimize confusion and human error. For this project, network ranges 192.168.0.0/26 and 172.16.0.0/24 have been assigned. 
-Device  | IP
+Device  | IP  | Default Gatway 
 ------------- | -------------
-Router 0 (Gig0/0)  | 192.168.0.1
-PC0  | 192.168.0.2
-PC1  | 192.168.0.3
-PC2  | 192.168.0.4
-Laptop  | 192.168.0.5
-PC2  | 192.168.0.4
-Router 0 (Gig0/1)  | 172.16.0.1
-Server 0  | 172.16.0.2
-Server 1  | 172.16.0.3
+Router 0 (Gig0/0)  | 192.168.0.1  | 
+PC0  | 192.168.0.2  |  192.168.0.1 
+PC1  | 192.168.0.3  |  192.168.0.1 
+PC2  | 192.168.0.4  |  192.168.0.1 
+Laptop  | 192.168.0.5  |  192.168.0.1 
+Router 0 (Gig0/1)  | 172.16.0.1  |  
+Server 0  | 172.16.0.2  |  172.16.0.1 
+Server 1  | 172.16.0.3  |  172.16.0.1 
 
 Add end devices (PCs/laptops/printers/tablets/etc)
 
