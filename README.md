@@ -1,6 +1,7 @@
 # Mini-Project-01---Network-Setup-and-Troubleshooting
 
 **Choose software and hardware**
+  
   Decide what the objective is. In this case, it would be to create a network between multiple LANs. Thus, we would require switches, routers, end devices, WAP, ethernet cables, servers, etc. 
 
 **IP assignments**
