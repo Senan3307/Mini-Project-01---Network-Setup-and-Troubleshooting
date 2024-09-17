@@ -11,7 +11,7 @@ Another use case could be tech giants such as Google. Google has offices and dat
 
 **Choose software and hardware**
   
-  Decide what the objective is. In this case, it would be to create a network between multiple LANs and establish communciation between various devices. Thus, we would require switches, routers, end devices, WAP, ethernet cables, servers, etc. 
+  Decide what the objective is. In this case, it would be to create a network between multiple LANs and establish communciation between various devices. Thus, we would require switches, routers, end devices, ethernet cables, etc. 
 
 **IP assignments**
   
@@ -31,7 +31,8 @@ Server 1  | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 **Add end devices (PCs/laptops/printers/tablets/etc)**
   
   Once an end device (Laptop, PC, etc) has been added, as seen in the image, you would then manually assign the IP address. On a Mac, you would go to system settings -> network -> details -> TCP/IP -> set configure IPv4 to "Manual" -> enter IP address and subnet mask as listed in the table above. 
-![Alt text](IP_Assignment_PC.png)
+<img width="715" alt="Screenshot 2024-09-17 at 16 58 22" src="https://github.com/user-attachments/assets/951b1072-ed31-43f1-a069-e5525751742f">
+
   You would also need to assign the default gateway to establish communication between the end device and the eventual addition of a router. Otherwise, the end device would not be able to recognize which channel to communicate through once a network has been established among multiuple LANs. To do this, change "router" to the assigned value as listed int he above table. 
 ![Alt text](Default_Gateway_Assignment_PC.png)
 
