@@ -111,4 +111,8 @@ Server 1  | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
    On mac it usually isn't an issue but with other operating systems, there are occasions where a website won't open due to firewall settings. For example, once different LANs have been connected, you may try to open a website from another device. However, with a firewall, this may be blocked, Thus, ensure that firewalls are blocked if you have any issues with opening up websites across devices.
 
 7. Slow speeds
-   Slow connectivity issues can be attributed to various factors such as outdated hardware, network traffic, bandwidth limitations, and many more. One issue which is encountered frequently is network traffic in which too many devices are trying to connect at once increasing traffic. One way to handle this is by simply decreasing the number of devices trying to connect to a network. Another solution is to increase the hardware so that the network capacity increases. 
+   Slow connectivity issues can be attributed to various factors such as outdated hardware, network traffic, bandwidth limitations, and many more. One issue which is encountered frequently is network traffic in which too many devices are trying to connect at once increasing traffic. One way to handle this is by simply decreasing the number of devices trying to connect to a network. Another solution is to increase the hardware so that the network capacity increases.
+
+# Retrospective 
+
+
