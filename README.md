@@ -30,7 +30,7 @@ Benefits:
 - Enables remote work and global collaboration.
 - Provides centralized data storage, management, and security.
 
-**Choose software and hardware**
+**1. Choose software and hardware**
   
 To achieve the objective of connecting multiple LANs and establishing communication between devices, the following components are required:
 
@@ -42,7 +42,7 @@ End Devices – PCs, laptops, printers, tablets, etc.
 
 Ethernet Cables – For connecting devices to switches and routers.c. 
 
-**IP assignments**
+**2. IP assignments**
   
   IPs are essential in identifying each device as well as allowing them to communicate with other devices. However, one of the most common issues with assigning IPs is IP address conflicts where two or more devices have the same IP. To prevent this, it would be most efficient to assign IPs beforehand to minimize confusion and human error. 
   
