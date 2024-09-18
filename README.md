@@ -101,14 +101,17 @@ Once the port has been configured, connect the switch to the router using an eth
 
 **Add LAN**
 
-  Follow the exact same steps for another gigabit Ethernet port on the router for another LAN. 
+  Follow the exact same steps from the beginning to set up another LAN and configure another gigabit Ethernet port on the router. 
 
 **Set default gateway to all end devices**
 
   As done in the "Add end devices" step, you now have to configure the default gateways of all devices. However, you must be careful which IPs are being used for the default gateway. If the LAN is connected to the router through one specific gigabitEthernet port, that specific IP must be used for the default gateway. 
 
 **Test the network**
-Finally, test to see if the router is working by pinging a device from one LAN to a device on another LAN
+
+Finally, test to see if the router is working by pinging a device from one LAN to a device on another LAN. 
+
+To do this, go to terminal and type "ping [any IP from another LAN]". If you get a ping response, your netork is communicating successfully. 
 
 
 # FAQ 
