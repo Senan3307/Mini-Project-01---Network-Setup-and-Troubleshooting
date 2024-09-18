@@ -7,7 +7,7 @@ The goal of this project is to create a network that connects multiple LANs and 
 
 **Use Cases**
 
-- Campus Networks
+Campus Networks
 
 Universities and schools such as LMU typically have multiple buildings and departments, each with its own LAN. These LANs are connected through a central network infrastructure.
 
@@ -19,7 +19,7 @@ Benefits:
 - Enables secure collaboration between students, staff, and faculty.
 
 
-- Corporate Networks
+Corporate Networks
   
 Large corporations with offices and data centers around the world use networks to connect their global operations.
 
