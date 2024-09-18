@@ -16,8 +16,14 @@ Benefits:
 - Provides seamless internet access and communication across departments.
 - Enables secure collaboration between students, staff, and faculty.
 
+Large corporations with offices and data centers around the world use networks to connect their global operations.
 
-Another use case could be tech giants such as Google. Google has offices and data centers all around the world. This is connected through networks on a larger scale. 
+Example: Google’s global network infrastructure connects its offices, data centers, and cloud services across continents, allowing employees to collaborate and access resources from anywhere.
+
+Benefits:
+- Ensures data availability and redundancy across regions.
+- Enables remote work and global collaboration.
+- Provides centralized data storage, management, and security.
 
 **Choose software and hardware**
   
