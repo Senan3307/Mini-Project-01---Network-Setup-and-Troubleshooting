@@ -62,14 +62,17 @@ From there, you should have access to giving the device a name. So type "hostnam
 
 <img width="322" alt="Screenshot 2024-09-18 at 15 18 50" src="https://github.com/user-attachments/assets/87fce906-822a-48ab-a8bf-2e434392b060">
 
-Additionally, we want to now configure the router interface. Type "interface gigabitEthernet 0/0/0" then press enter. Then type "ip address 192.168.0.1   255.255.255.192". Press enter then type "description ## to switch 01 ##". Press enter then type "no shutdown". To view the running configuration, type "show running-config" to check whether the information is correct. Then save the configuration to NVRAM by typing "write memory". By saving it to the RAM, you no longer have to reconfigure the router every time because it will be saved in the memory. 
+Additionally, we want to now configure the router interface. Type "interface gigabitEthernet 0/0/0" then press enter. Then type "ip address 192.168.0.1   255.255.255.192". Press enter then type "description ## to switch 01 ##". Press enter then type "no shutdown". This has now configured the gigabitEthernet 0/0/0 port with the IP and subnet. 
 
-<img width="249" alt="Screenshot 2024-09-18 at 15 21 37" src="https://github.com/user-attachments/assets/462dda6f-c37a-4cbc-8f6c-abe366982a4f">
+<img width="310" alt="Screenshot 2024-09-18 at 16 18 58" src="https://github.com/user-attachments/assets/6dbd752d-475c-4f59-87f2-e216df2295ac">
 
-  Once the IP address for the router itself has been configrued, the IP address for each specific LAN port on the router must also be configured. 
-  Once the port has been configured, connect the switch to the router using an ethernet cable. Make sure to connect the ethernet cable to the correct port as assigned earlier. 
-  I have configured the IP on the router. However, it is still not communicating with the switch. 
-![Alt text](Config_Router0.png)
+To view the running configuration to ensure the information entered is correct, exit the global configuration mode with ctrl+z then type "show running-config" in privileged exec mode to check whether the information is correct (it should give you information such as the image below). Then save the configuration to NVRAM by typing "write memory". By saving it to the RAM, you no longer have to reconfigure the router every time because it will be saved in the memory. 
+
+<img width="216" alt="Screenshot 2024-09-18 at 16 27 16" src="https://github.com/user-attachments/assets/f9595444-3459-448c-a9f8-68072d79c484">
+
+Follow the exact same steps for another gigabit Ethernet port on the router for another LAN. 
+
+Once the port has been configured, connect the switch to the router using an ethernet cable. Make sure to connect the ethernet cable to the correct port as assigned earlier. 
 
 **LAN Added**
 
