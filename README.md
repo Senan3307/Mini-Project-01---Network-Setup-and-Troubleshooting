@@ -57,7 +57,7 @@ Router 0 (Gig0/1)  | 172.16.0.1  |  -------------- |  255.255.255.0
 PC2  | 172.16.0.2  |  172.16.0.1 |  255.255.255.0
 PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0 
 
-**Add end devices (PCs/laptops/printers/tablets/etc)**
+**3. Add end devices (PCs/laptops/printers/tablets/etc)**
   
   Once an end device (Laptop, PC, etc) has been added, as seen in the image, you would then manually assign the IP address. 
   
@@ -67,11 +67,11 @@ PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 
 <img width="715" alt="Screenshot 2024-09-17 at 16 58 22" src="https://github.com/user-attachments/assets/951b1072-ed31-43f1-a069-e5525751742f">
 
-**Add switch**
+**4. Add switch**
 
   You then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The switch must be connected to a power outlet in order for it to turn on. The switches we have been using does not have a on-off button so it should automatically turn on once plugged in. A switch connects various devices on a network, allowing them to communicate with each other and share resources. In this case, without the switch, PC 0 would not be able to communicate with PC 1. 
 
-**Add a router to talk to different networks**
+**5. Add a router to talk to different networks**
 
   A router helps connect devices to the internet and connect the devices to each other. In this project, the router allows devices from one LAN to communicate with devices from another LAN. The router must also be connected to a power outlet and, contrary to the switch, it should have an on-off switch so make sure to turn the router on. It will take a moment for the router to boot up as well. Once the router is turned on, you must first connect a console cable to the port labeled "console" to configure the IP address on the router. 
 
@@ -80,7 +80,7 @@ PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 <img width="532" alt="Screenshot 2024-09-17 at 17 04 50" src="https://github.com/user-attachments/assets/f870dcbf-6edb-4940-8be3-033848a0ac90">
 
 
-**Configure IPs on router**
+**6. Configure IPs on router**
 
   Firstly, IPs have to be configured on the router because we want to identify the router within a network. Moreover, as the router, in this case, will be the default gateway, each gigabit port has to be configured so that the end devices know the pathway it has to take to reach another device. 
 
@@ -118,15 +118,15 @@ Then save the configuration to NVRAM by typing "write memory". By saving it to t
 
 Once the port has been configured, connect the switch to the router using an ethernet cable. Make sure to connect the ethernet cable to the correct port as assigned earlier. 
 
-**Add LAN**
+**7. Add LAN**
 
   Follow the exact same steps from the beginning to set up another LAN and configure another gigabit Ethernet port on the router. 
 
-**Set default gateway to all end devices**
+**8. Set default gateway to all end devices**
 
   As done in the "Add end devices" step, you now have to configure the default gateways of all devices. However, you must be careful which IPs are being used for the default gateway. If the LAN is connected to the router through one specific gigabitEthernet port, that specific IP must be used for the default gateway. 
 
-**Test the network**
+**9. Test the network**
 
 Finally, test to see if the router is working by pinging a device from one LAN to a device on another LAN. 
 
