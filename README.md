@@ -7,7 +7,15 @@ The goal of this project is to create a network that connects multiple LANs and 
 
 **Use Cases**
 
-One use case would be at LMU. LMU has multiple local area networks spanning across multiple buildings and they ultimately connect to the main servers in University hall. All of this would not be connected if it wasn't for established connections of networks. While the scale of LMU's network is much larger than what we can replicate in classes, the overall foundation of the architecture is similar to what we can replicate in packet tracer and class. 
+Universities and schools such as LMU typically have multiple buildings and departments, each with its own LAN. These LANs are connected through a central network infrastructure.
+
+Example: A university campus like Loyola Marymount University (LMU) connects multiple local networks in different buildings (e.g., libraries, labs, dormitories) to a central server in University Hall.
+
+Benefits:
+- Facilitates access to shared resources such as databases, academic tools, and online libraries.
+- Provides seamless internet access and communication across departments.
+- Enables secure collaboration between students, staff, and faculty.
+
 
 Another use case could be tech giants such as Google. Google has offices and data centers all around the world. This is connected through networks on a larger scale. 
 
