@@ -83,8 +83,11 @@ Once the port has been configured, connect the switch to the router using an eth
 
 **Set default gateway to all end devices**
 
-  As done in the "Add end devices" step, I have configured all the default gateways on the network. However, we have to be careful of which router port used in order to configure default gateways. 
-![Alt text](Added_LAN.png)
+  As done in the "Add end devices" step, you now have to configure the default gateways of all devices. However, you must be careful which IPs are being used for the default gateway. If the LAN is connected to the router through one specific gigabitEthernet port, that specific IP must be used for the default gateway. 
+
+**Test the network**
+Finally, test to see if the router is working by pinging a device from one LAN to a device on another LAN
+
 
 
 # FAQ 
