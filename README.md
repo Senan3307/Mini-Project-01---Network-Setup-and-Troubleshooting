@@ -66,11 +66,6 @@ Additionally, we want to know configure the router interface. As seen in the ima
   I have configured the IP on the router. However, it is still not communicating with the switch. 
 ![Alt text](Config_Router0.png)
 
-**Connect the switches to the router with ethernet cables**
-
-  It will take a moment for the router to boot up as well. Once the router is turned on, you must first connect a ethernet cable to the port labeled "console" to configure the IP address on the router. 
-![Alt text](Router_Added_Network.png)
-
 **LAN Added**
 
   I have now added another LAN using the same exact steps as before, however, using different network ranges. I have added a new switch and two servers. 
