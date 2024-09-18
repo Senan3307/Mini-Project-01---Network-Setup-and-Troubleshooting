@@ -7,6 +7,8 @@ The goal of this project is to create a network that connects multiple LANs and 
 
 **Use Cases**
 
+-Campus Networks
+
 Universities and schools such as LMU typically have multiple buildings and departments, each with its own LAN. These LANs are connected through a central network infrastructure.
 
 Example: A university campus like Loyola Marymount University (LMU) connects multiple local networks in different buildings (e.g., libraries, labs, dormitories) to a central server in University Hall.
@@ -16,6 +18,8 @@ Benefits:
 - Provides seamless internet access and communication across departments.
 - Enables secure collaboration between students, staff, and faculty.
 
+- Corporate Networks
+  
 Large corporations with offices and data centers around the world use networks to connect their global operations.
 
 Example: Google’s global network infrastructure connects its offices, data centers, and cloud services across continents, allowing employees to collaborate and access resources from anywhere.
