@@ -72,14 +72,11 @@ To view the running configuration to ensure the information entered is correct, 
 
 <img width="216" alt="Screenshot 2024-09-18 at 16 27 16" src="https://github.com/user-attachments/assets/f9595444-3459-448c-a9f8-68072d79c484">
 
-Follow the exact same steps for another gigabit Ethernet port on the router for another LAN. 
-
 Once the port has been configured, connect the switch to the router using an ethernet cable. Make sure to connect the ethernet cable to the correct port as assigned earlier. 
 
-**LAN Added**
+**Add LAN**
 
-  I have now added another LAN using the same exact steps as before, however, using different network ranges. I have added a new switch and two servers. 
-![Alt text](Added_LAN.png)
+  Follow the exact same steps for another gigabit Ethernet port on the router for another LAN. 
 
 **Set default gateway to all end devices**
 
