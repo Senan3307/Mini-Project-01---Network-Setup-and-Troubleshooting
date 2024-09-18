@@ -15,18 +15,16 @@ Another use case could be tech giants such as Google. Google has offices and dat
 
 **IP assignments**
   
-  It would be most efficient to assign IPs beforehand to minimize confusion and human error. For this project, network ranges 192.168.0.0/26 and 172.16.0.0/24 have been assigned. 
+  IPs are essential in identifying each device as well as allowing them to communicate with other devices. However, one of the most common issues with assigning IPs is IP address conflicts where two or more devices have the same IP. To prevent this, it would be most efficient to assign IPs beforehand to minimize confusion and human error. For this project, networks 192.168.0.0/26 and 172.16.0.0/24 have been assigned. 
+  
 Device  | IP  | Default Gatway | Subnet Mask
 ------------- | ------------- | -------------- | ------------
 Router 0 (Gig0/0)  | 192.168.0.1  | 
 PC0  | 192.168.0.2  |  192.168.0.1 |  255.255.255.192
 PC1  | 192.168.0.3  |  192.168.0.1 |  255.255.255.192 
-PC2  | 192.168.0.4  |  192.168.0.1 |  255.255.255.192 
-Tablet PC1  | 192.168.0.5  |  192.168.0.1 |  255.255.255.192
-Smartphone  | 192.168.0.6  |  192.168.0.1 |  255.255.255.192
 Router 0 (Gig0/1)  | 172.16.0.1  |  
-Server 0  | 172.16.0.2  |  172.16.0.1 |  255.255.255.0
-Server 1  | 172.16.0.3  |  172.16.0.1 |  255.255.255.0 
+PC2  | 172.16.0.2  |  172.16.0.1 |  255.255.255.0
+PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0 
 
 **Add end devices (PCs/laptops/printers/tablets/etc)**
   
@@ -37,16 +35,20 @@ Server 1  | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 
 **Add switch**
 
-  You then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The switch must be connected to a power outlet in order for it to turn on. The switches we have been using does not have a on-off button so it should automatically turn on once plugged in. A switch connects various devices on a network, allowing them to communicate with each other and share resources. 
+  You then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The switch must be connected to a power outlet in order for it to turn on. The switches we have been using does not have a on-off button so it should automatically turn on once plugged in. A switch connects various devices on a network, allowing them to communicate with each other and share resources. In this case, without the switch, PC 0 would not be able to communicate with PC 1. 
 
 **Add a router to talk to different networks**
 
-  A router helps connect devices to the internet and connect the devices to each other. The router must also be connected to a power outlet and, contrary to the switch, it should have an on-off switch so make sure to turn the router on. It will take a moment for the router to boot up as well. Once the router is turned on, you must first connect an ethernet cable to the port labeled "console" to configure the IP address on the router. 
+  A router helps connect devices to the internet and connect the devices to each other. In this project, the router allows devices from one LAN to communicate with devices from another LAN. The router must also be connected to a power outlet and, contrary to the switch, it should have an on-off switch so make sure to turn the router on. It will take a moment for the router to boot up as well. Once the router is turned on, you must first connect an ethernet cable to the port labeled "console" to configure the IP address on the router. 
 
 <img width="532" alt="Screenshot 2024-09-17 at 17 04 50" src="https://github.com/user-attachments/assets/f870dcbf-6edb-4940-8be3-033848a0ac90">
 
 
 **Configure IPs on router**
+
+  IPs have to be configured on the router as well firstly, because we want to identify the router within a network. Moreover, it allows us to SSH into the router, allowing us access to administrative tasks. Access to administrative tasks are required to configure the gigabit ports on the router, which is an essential step in connecting LANs. 
+
+  <img width="997" alt="Screenshot 2024-09-17 at 17 25 28" src="https://github.com/user-attachments/assets/8a80cffe-91c1-4f67-8ed4-b7a0ffc46c01">
 
   Once the IP address for the router itself has been configrued, the IP address for each specific LAN port on the router must also be configured. 
   Once the port has been configured, connect the switch to the router using an ethernet cable. Make sure to connect the ethernet cable to the correct port as assigned earlier. 
