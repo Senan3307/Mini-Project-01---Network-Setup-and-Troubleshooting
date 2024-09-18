@@ -46,7 +46,7 @@ PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 
 **Configure IPs on router**
 
-  IPs have to be configured on the router as well firstly, because we want to identify the router within a network. Moreover, it allows us to SSH into the router, allowing us access to administrative tasks. Access to administrative tasks are required to configure the gigabit ports on the router, which is an essential step in connecting LANs. 
+  Firstly, IPs have to be configured on the router because we want to identify the router within a network. Moreover, as the router, in this case, will be the default gateway, each gigabit port has to be configured so that the end devices know the pathway it has to take to reach another device. To configure the IP on the router, you must first access the Cisco CLI. As shown in the image, you must first install driver for a serial adapter. Then, you open terminal on the mac and type "ls /dev/*usb*". After that, type "screen /dev/USB-SERIAL-CONNECTION BAUD-RATE" then press enter twice. This should allow you to enter the Cisco CLI. 
 
   <img width="997" alt="Screenshot 2024-09-17 at 17 25 28" src="https://github.com/user-attachments/assets/8a80cffe-91c1-4f67-8ed4-b7a0ffc46c01">
 
