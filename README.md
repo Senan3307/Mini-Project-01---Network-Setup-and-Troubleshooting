@@ -85,6 +85,97 @@ Once the port has been configured, connect the switch to the router using an eth
 **Test the network**
 Finally, test to see if the router is working by pinging a device from one LAN to a device on another LAN
 
+**Objective**
+
+The goal of this project is to create a network that connects multiple LANs and allows communication between various devices. We'll be simulating this setup using both hardware (routers, switches, cables) and software (e.g., Packet Tracer) to replicate a multi-LAN network environment.
+
+**Use Cases**
+LMU Campus Network
+
+LMU's network spans across multiple buildings, with various LANs ultimately connecting to main servers located in University Hall. Though on a much larger scale, the architecture is similar to what we can replicate in classroom simulations using tools like Packet Tracer.
+Google Global Network
+
+Google's network infrastructure connects offices and data centers worldwide. This global network is an advanced version of LAN-WAN connections, showing the scalability of such network setups.
+
+**Hardware and Software Requirements**
+To achieve the objective of connecting multiple LANs and establishing communication between devices, the following components are required:
+
+Switches – To connect multiple devices within a LAN.
+Routers – To connect different LANs.
+End Devices – PCs, laptops, printers, tablets, etc.
+Ethernet Cables – For connecting devices to switches and routers.
+IP Assignments
+For this project, the following IP networks are assigned:
+
+Network 1: 192.168.0.0/26
+Network 2: 172.16.0.0/24
+Here are the IP assignments for the devices and their configurations:
+
+Device	IP Address	Default Gateway	Subnet Mask
+Router 0 (Gig0/0)	192.168.0.1	-	255.255.255.192
+PC0	192.168.0.2	192.168.0.1	255.255.255.192
+PC1	192.168.0.3	192.168.0.1	255.255.255.192
+Router 0 (Gig0/1)	172.16.0.1	-	255.255.255.0
+PC2	172.16.0.2	172.16.0.1	255.255.255.0
+PC3	172.16.0.3	172.16.0.1	255.255.255.0
+Steps to Build the Network
+1. Add End Devices (PCs, Laptops, Printers, etc.)
+Once you've added the end devices:
+
+Manually assign IP addresses:
+On a Mac: Go to System Settings > Network > Details > TCP/IP.
+Set Configure IPv4 to "Manual" and enter the IP address, subnet mask, and default gateway from the table above.
+2. Add a Switch
+Connect the end devices (PCs, laptops, etc.) to the switch using ethernet cables.
+Ensure the switch is plugged into a power outlet (it will automatically turn on).
+The switch will allow communication between connected devices within a LAN.
+3. Add a Router for Communication Between LANs
+Connect the router to a power outlet and turn it on (make sure to use the on-off switch).
+To configure the router, connect a console cable to the console port.
+Set up the IP addresses for the router's interfaces to act as the gateway for each LAN.
+Router Configuration
+Accessing Configuration Modes
+
+Open the terminal and access the router via User EXEC mode:
+Type Router>.
+Enter Privileged EXEC mode:
+Type enable. The command prompt should change to Router#.
+Enter Global Configuration mode:
+Type configure terminal or config t. The prompt will now show Router(config)#.
+Set Hostname
+
+Assign a name to the router:
+Type hostname router01.
+The prompt will now display router01(config)#.
+Configure Router Interfaces
+
+Type interface gigabitEthernet 0/0/0 to access the first interface.
+Set the IP address and subnet mask:
+Type ip address 192.168.0.1 255.255.255.192.
+Label the interface:
+Type description ## to switch 01 ##.
+Enable the interface:
+Type no shutdown.
+Save Configuration
+
+To view the current configuration, exit to Privileged EXEC mode by typing Ctrl+Z, then use show running-config.
+To save the configuration to NVRAM:
+Type write memory.
+Connect the Router to the Switch
+
+Use an ethernet cable to connect the router to the switch through the appropriate gigabitEthernet port (e.g., Gig0/0/0).
+Adding and Configuring LANs
+Repeat the router configuration steps for other interfaces to establish additional LANs. For example:
+
+Use GigabitEthernet 0/1 for Network 2 (172.16.0.0/24).
+Set Default Gateway for End Devices
+As described in the "Add End Devices" step, set the correct default gateway for each device to ensure proper communication across LANs. Ensure that the gateway corresponds to the router interface connected to that LAN.
+
+Testing the Network
+Ping Test
+Test the setup by pinging devices from one LAN to another using their IP addresses. If successful, this confirms that the devices on different LANs are communicating through the router.
+
+
 
 
 # FAQ 
