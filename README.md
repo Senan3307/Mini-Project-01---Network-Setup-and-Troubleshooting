@@ -46,20 +46,25 @@ PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 
 **Configure IPs on router**
 
-  Firstly, IPs have to be configured on the router because we want to identify the router within a network. Moreover, as the router, in this case, will be the default gateway, each gigabit port has to be configured so that the end devices know the pathway it has to take to reach another device. To configure the IP on the router, you must first access the Cisco CLI. Then, you open terminal on the mac and type "ls /dev/*usb*". After that, type "screen /dev/USB-SERIAL-CONNECTION BAUD-RATE" then press enter twice. This should allow you to enter the Cisco CLI. 
+  Firstly, IPs have to be configured on the router because we want to identify the router within a network. Moreover, as the router, in this case, will be the default gateway, each gigabit port has to be configured so that the end devices know the pathway it has to take to reach another device. 
 
-  <img width="997" alt="Screenshot 2024-09-17 at 17 25 28" src="https://github.com/user-attachments/assets/8a80cffe-91c1-4f67-8ed4-b7a0ffc46c01">
+Once you open terminal on your mac, you need to be in the right mode to make changes. As seen in the image below, you have to begin by accessing the user exec mode by typing "Router>". This will give you access to limited commands for viewing system information. 
 
-Once you've entered the Cisco CLI, you need to be in the right mode to make changes. As seen in the image below, you have to begin by accessing the user exec mode by typing "Router>". This will give you access to limited commands for viewing system information. Then, you have to enter privileged EXEC mode by typing "enable". This gives you access to all status and configuration commands. You will know you have entered the mode if terminal is showing "Router#" on the command line. Once privileged exec mode is enabled, you are able to enter the global configuration mode by typing "configure terminal". You are successfully in global configuration mode if the command line shows "Router (config)#". 
+Then, you have to enter privileged EXEC mode by typing "enable". This gives you access to all status and configuration commands. You will know you have entered the mode if terminal is showing "Router#" on the command line. It should look like the image below
 
-<img width="991" alt="Screenshot 2024-09-17 at 21 20 05" src="https://github.com/user-attachments/assets/a9a9d474-d907-40c5-9ad3-3c73c906ecb8">
+<img width="133" alt="Screenshot 2024-09-18 at 15 17 09" src="https://github.com/user-attachments/assets/e3a16ff3-92a9-4a84-bf0b-7b3515cb6547">
 
-From there, you should have access to giving the device a name. So type "hostname router01" and it should change the name of the router. 
+Once privileged exec mode is enabled, you are able to enter the global configuration mode by typing "configure terminal" or "config t". You are successfully in global configuration mode if the command line shows "Router (config)#". It should look like the image below
 
-Additionally, we want to know configure the router interface. As seen in the image, type "interface gigabitEthernet 0/0" then press enter. Then typpe "ip address 192.168.0.1   255.255.255.192". Press enter then type "description ## to switch 01 ##". Press enter then type "no shutdown". To view the running configuration, type "show running-config" to check whether the information is correct. Then save the configuration to NVRAM by typing "write memory". By saving it to the RAM, you no longer have to reconfigure the router every time because it will be saved in the memory. 
+<img width="334" alt="Screenshot 2024-09-18 at 15 18 11" src="https://github.com/user-attachments/assets/b3326263-a242-4540-8611-b1a01ac62890">
 
-<img width="803" alt="Screenshot 2024-09-17 at 21 29 14" src="https://github.com/user-attachments/assets/2faa6f29-f90a-46e9-921e-cbde2410b70b">
+From there, you should have access to giving the device a name. So type "hostname router01" and it should change the name of the router. You can see that the name of the host changed from Router to router01
 
+<img width="322" alt="Screenshot 2024-09-18 at 15 18 50" src="https://github.com/user-attachments/assets/87fce906-822a-48ab-a8bf-2e434392b060">
+
+Additionally, we want to now configure the router interface. Type "interface gigabitEthernet 0/0/0" then press enter. Then type "ip address 192.168.0.1   255.255.255.192". Press enter then type "description ## to switch 01 ##". Press enter then type "no shutdown". To view the running configuration, type "show running-config" to check whether the information is correct. Then save the configuration to NVRAM by typing "write memory". By saving it to the RAM, you no longer have to reconfigure the router every time because it will be saved in the memory. 
+
+<img width="249" alt="Screenshot 2024-09-18 at 15 21 37" src="https://github.com/user-attachments/assets/462dda6f-c37a-4cbc-8f6c-abe366982a4f">
 
   Once the IP address for the router itself has been configrued, the IP address for each specific LAN port on the router must also be configured. 
   Once the port has been configured, connect the switch to the router using an ethernet cable. Make sure to connect the ethernet cable to the correct port as assigned earlier. 
