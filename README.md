@@ -152,7 +152,7 @@ To do this, go to terminal and type "ping [any IP from another LAN]". If you get
 
 2. I can't connect my devices across different LANs. What do I do?
 
-   First, check to make sure the router is turned on. There should an on-off switch. If that's not the issue, make sure the ethernet cables are connected to the right gigabit ports. When configuring the router, you should have configured a specific port with a specific default gateway IP. You may also want to carefully check the IP values again to see if there are no typos. You also want to check if the default gateway is assigned on each of your end devices. Finally, if that is not the case make sure all the cables are securely connected with no loose ends and if this is not the issue you may have to reconfigure the router.
+   First, try seeing if another device has the same issue. If a different device works fine but yours doesn't, you might want to check the configurations on your device or the hardware. If it's not working on other devices as well, check to make sure the router is turned on. There should an on-off switch. If that's not the issue, make sure the ethernet cables are connected to the right gigabit ports. When configuring the router, you should have configured a specific port with a specific default gateway IP. You may also want to carefully check the IP values again to see if there are no typos. You also want to check if the default gateway is assigned on each of your end devices. Finally, if that is not the case make sure all the cables are securely connected with no loose ends and if this is not the issue you may have to reconfigure the router.
 
 3. Making IP assignments more clear and concise
 
