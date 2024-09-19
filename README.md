@@ -164,7 +164,7 @@ To do this, go to terminal and type "ping [any IP from another LAN]". If you get
 
 5. Modifying hardware
 
-   One safety hazard to not is that unlike virtual networks on packet tracer, physical hardware has electricity running through them with high energy output at times due to the various devices connected to them. Thus, when disconnecting wires or cables from devices such as switches or cables, ensure that they are turned off. This way, it minimizes any hazards.
+   One safety hazard to note is that unlike virtual networks on packet tracer, physical hardware has electricity running through them with high energy output at times due to the various devices connected to them. Thus, when disconnecting wires or cables from devices such as switches or cables, ensure that they are turned off. This way, it minimizes any hazards.
 
 6. Firewall/security settings
     
