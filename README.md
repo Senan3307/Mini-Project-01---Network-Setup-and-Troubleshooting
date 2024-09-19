@@ -95,9 +95,9 @@ PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 
   Firstly, IPs have to be configured on the router because we want to identify the router within a network. Moreover, as the router, in this case, will be the default gateway, each gigabit port has to be configured so that the end devices know the pathway it has to take to reach another device. 
 
-Once you open terminal on your mac, you need to be in the right mode to make changes. As seen in the image below, you have to begin by accessing the user exec mode by typing "Router>". This will give you access to limited commands for viewing system information. 
+Once you open terminal on your mac, you need to be in the right mode to make changes. As seen in the image below, you have to begin by accessing the user exec mode by typing "Router>". This only gives you access to limited commands for viewing system information. 
 
-Then, you have to enter privileged EXEC mode by typing "enable". This gives you access to all status and configuration commands. You will know you have entered the mode if terminal is showing "Router#" on the command line. It should look like the image below
+Thus, you have to enter privileged EXEC mode by typing "enable". This gives you access to all status and configuration commands. You will know you have entered the mode if terminal is showing "Router#" on the command line. It should look like the image below
 
 <img width="133" alt="Screenshot 2024-09-18 at 15 17 09" src="https://github.com/user-attachments/assets/e3a16ff3-92a9-4a84-bf0b-7b3515cb6547">
 
