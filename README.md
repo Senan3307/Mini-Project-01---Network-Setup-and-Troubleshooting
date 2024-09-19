@@ -70,17 +70,17 @@ PC3 | 172.16.0.3  |  172.16.0.1 |  255.255.255.0
 
 **3. Add end devices (PCs/laptops/printers/tablets/etc)**
   
-  Once an end device (Laptop, PC, etc) has been added, as seen in the image, you would then manually assign the IP address. 
+  Once an end device (Laptop, PC, etc) has been selected you would then manually assign the IP address. 
   
   On a Mac, you would go to system settings -> network -> details -> TCP/IP -> set configure IPv4 to "Manual" -> enter IP address and subnet mask as listed in the table above. 
   
-  You would also need to assign the default gateway to establish communication between the end device and the eventual addition of a router. Otherwise, the end device would not be able to recognize which channel to communicate through once a network has been established among multiuple LANs. To do this, change "router" to the assigned value as listed int he above table. 
+  You would also need to assign the default gateway to establish communication between the end device and the eventual addition of a router. Otherwise, the end device would not be able to recognize which channel to communicate through once a network has been established among multiuple LANs. To do this, change "router" to the assigned value as listed in the above table. 
 
 <img width="715" alt="Screenshot 2024-09-17 at 16 58 22" src="https://github.com/user-attachments/assets/951b1072-ed31-43f1-a069-e5525751742f">
 
 **4. Add switch**
 
-  You then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The switch must be connected to a power outlet in order for it to turn on. The switches we have been using does not have a on-off button so it should automatically turn on once plugged in. A switch connects various devices on a network, allowing them to communicate with each other and share resources. In this case, without the switch, PC 0 would not be able to communicate with PC 1. 
+  You then connect the end devices to the switch using the ethernet cables. It will take a little bit of time for the switch to boot and connect to the end devices. The switch must be connected to a power outlet in order for it to turn on. The switches we have been using does not have an on-off button so it should automatically turn on once plugged in. A switch connects various devices within a local area network, allowing them to communicate with each other and share resources. In this case, without the switch, PC 0 would not be able to communicate with PC 1. 
 
 **5. Add a router to talk to different networks**
 
@@ -101,7 +101,7 @@ Thus, you have to enter privileged EXEC mode by typing "enable". This gives you 
 
 <img width="133" alt="Screenshot 2024-09-18 at 15 17 09" src="https://github.com/user-attachments/assets/e3a16ff3-92a9-4a84-bf0b-7b3515cb6547">
 
-Once privileged exec mode is enabled, you are able to enter the global configuration mode by typing "configure terminal" or "config t". You are successfully in global configuration mode if the command line shows "Router (config)#". It should look like the image below
+Once privileged exec mode is enabled, you are able to enter the global configuration mode by typing "configure terminal" or "config t". You are successfully in global configuration mode if the command line shows "Router (config)#". It should look like the image below. Global configuration mode gives you permission to change the configurations in the router, so getting to here is essential for administering IPs. 
 
 <img width="334" alt="Screenshot 2024-09-18 at 15 18 11" src="https://github.com/user-attachments/assets/b3326263-a242-4540-8611-b1a01ac62890">
 
@@ -111,11 +111,11 @@ From there, you should have access to giving the device a name. So type "hostnam
 
 Additionally, we want to now configure the router interface. 
 
-Type "interface gigabitEthernet 0/0/0" then press enter. Then type "ip address 192.168.0.1  255.255.255.192". 
+Type "interface gigabitEthernet 0/0/0" then press enter. Then type "ip address 192.168.0.1  255.255.255.192". This step has essentially configured the IP and Subnets to the router. 
 
 Press enter then type "description ## to switch 01 ##". 
 
-Press enter then type "no shutdown". 
+Press enter then type "no shutdown". No shutdown is essential because, by default, router ports are off. Therefore, this step turns the port on, making it accessible and available. 
 
 This has now configured the gigabitEthernet 0/0/0 port with the IP and subnet. By configuring this gigabit Ethernet port, it can now become the default gateway for the specific LAN, allowing end devices to know the flow of information. 
 
