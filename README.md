@@ -3,7 +3,7 @@
 # Step-by-Step Configuration Guide
 **Objective**
 
-The goal of this project is to create a network that connects multiple LANs and allows communication between various devices. We'll be simulating this setup using both hardware (routers, switches, cables) and software (e.g., Packet Tracer) to replicate a multi-LAN network environment.
+The objective of a network is to be able to share resources among devices and allow users access to data and hardware regardless of location. The goal of this project is to create a network that connects multiple LANs and allows communication between various devices. We'll be simulating this setup using both hardware (routers, switches, cables) and software (e.g., Packet Tracer) to replicate a multi-LAN network environment.
 
 **Use Cases**
 
