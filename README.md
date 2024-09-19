@@ -155,18 +155,23 @@ To do this, go to terminal and type "ping [any IP from another LAN]". If you get
    First, check to make sure the router is turned on. There should an on-off switch. If that's not the issue, make sure the ethernet cables are connected to the right gigabit ports. When configuring the router, you should have configured a specific port with a specific default gateway IP. You may also want to carefully check the IP values again to see if there are no typos. You also want to check if the default gateway is assigned on each of your end devices. Finally, if that is not the case make sure all the cables are securely connected with no loose ends and if this is not the issue you may have to reconfigure the router.
 
 3. Making IP assignments more clear and concise
+
    As I have done so in the step-by-step configuration guide, it is good practice to make a table of all the devices in a network and assigning the IP/subnet masks beforehand. By doing this, it eradicated human error as well as being able to identify the IPs of each specific device easily. Further, a common mistake occurs when one forgets to leave the first IP address open for the default gateway. By creating a table, you are able to account for this beforehand and eradicate this mistake.
 
 4. Setting-up / maintaining networks
+
    One good practice for setting-up / maintaining a network is to always have the main objective/idea before setting up the hardware. This is because various hardware and cables can get messy and inefficient without having a clear idea fo what you are trying to do. One of the ways we have done this is through creating the network in packet tracer beforehand. By making the network virtually, you are able to clearly visualize what needs to be connected to what and the actions needed to be taken to complete the network.
 
 5. Modifying hardware
+
    One safety hazard to not is that unlike virtual networks on packet tracer, physical hardware has electricity running through them with high energy output at times due to the various devices connected to them. Thus, when disconnecting wires or cables from devices such as switches or cables, ensure that they are turned off. This way, it minimizes any hazards.
 
 6. Firewall/security settings
+    
    On mac it usually isn't an issue but with other operating systems, there are occasions where a website won't open due to firewall settings. For example, once different LANs have been connected, you may try to open a website from another device. However, with a firewall, this may be blocked, Thus, ensure that firewalls are blocked if you have any issues with opening up websites across devices.
 
 7. Slow speeds
+
    Slow connectivity issues can be attributed to various factors such as outdated hardware, network traffic, bandwidth limitations, and many more. One issue which is encountered frequently is network traffic in which too many devices are trying to connect at once increasing traffic. One way to handle this is by simply decreasing the number of devices trying to connect to a network. Another solution is to increase the hardware so that the network capacity increases.
 
 # Retrospective 
