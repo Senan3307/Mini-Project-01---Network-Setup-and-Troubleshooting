@@ -137,9 +137,9 @@ To do this, go to terminal and type "ping [any IP from another LAN]". If you get
 
 1. How do I check if my devices are successfully connected to a LAN?
 
-To verify if your devices are connected to a Local Area Network (LAN), follow these steps:
+  To verify if your devices are connected to a Local Area Network (LAN), follow these steps:
 
-On a Mac:
+  On a Mac:
 
 - Open the Terminal application.
 - Type the command: ping [IP address] (replace [IP address] with the target device’s IP).
@@ -148,25 +148,25 @@ On a Mac:
   - Ensure all Ethernet cables are securely connected to both the switch and the devices.
   - Verify that the IP address and subnet mask are correctly configured on each device. Double-check for typos, especially in the numbers or subnet mask settings.
 
-By ensuring proper configuration and securely connected hardware, devices should communicate successfully on the LAN.
+  By ensuring proper configuration and securely connected hardware, devices should communicate successfully on the LAN.
 
 2. Why can’t I connect my devices across different LANs?
 
-If devices across different LANs cannot connect, follow these troubleshooting steps:
+  If devices across different LANs cannot connect, follow these troubleshooting steps:
 
-Check the Router:
+  Check the Router:
 
 - Ensure the router is powered on (look for an on-off switch).
 - Verify that the Ethernet cables are properly connected to the correct gigabit ports on the router.
 - Review IP Configuration:
 
-Make sure the router has been correctly configured with a specific default gateway IP for each port.
+  Make sure the router has been correctly configured with a specific default gateway IP for each port.
 - Recheck the IP values for any potential typos or configuration errors.
 - Default Gateway Assignment:
 
-Confirm that the default gateway has been correctly assigned on all end devices.
+  Confirm that the default gateway has been correctly assigned on all end devices.
 
-Final Checks:
+  Final Checks:
 
 - Ensure all cables are securely connected, with no loose ends.
 - If issues persist, you may need to reconfigure the router from scratch to resolve the problem.
