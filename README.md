@@ -117,7 +117,7 @@ Press enter then type "description ## to switch 01 ##".
 
 Press enter then type "no shutdown". 
 
-This has now configured the gigabitEthernet 0/0/0 port with the IP and subnet. 
+This has now configured the gigabitEthernet 0/0/0 port with the IP and subnet. By configuring this gigabit Ethernet port, it can now become the default gateway for the specific LAN, allowing end devices to know the flow of information. 
 
 <img width="310" alt="Screenshot 2024-09-18 at 16 18 58" src="https://github.com/user-attachments/assets/6dbd752d-475c-4f59-87f2-e216df2295ac">
 
