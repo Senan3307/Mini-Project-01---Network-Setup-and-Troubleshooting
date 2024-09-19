@@ -150,8 +150,27 @@ On a Mac:
 
 By ensuring proper configuration and securely connected hardware, devices should communicate successfully on the LAN.
 
-2. I can't connect my devices across different LANs. What do I do?
-   First, check to make sure the router is turned on. There should an on-off switch. If that's not the issue, make sure the ethernet cables are connected to the right gigabit ports. When configuring the router, you should have configured a specific port with a specific default gateway IP. You may also want to carefully check the IP values again to see if there are no typos. You also want to check if the default gateway is assigned on each of your end devices. Finally, if that is not the case make sure all the cables are securely connected with no loose ends and if this is not the issue you may have to reconfigure the router.
+2. Why can’t I connect my devices across different LANs?
+
+If devices across different LANs cannot connect, follow these troubleshooting steps:
+
+Check the Router:
+
+- Ensure the router is powered on (look for an on-off switch).
+- Verify that the Ethernet cables are properly connected to the correct gigabit ports on the router.
+- Review IP Configuration:
+
+Make sure the router has been correctly configured with a specific default gateway IP for each port.
+- Recheck the IP values for any potential typos or configuration errors.
+- Default Gateway Assignment:
+
+Confirm that the default gateway has been correctly assigned on all end devices.
+
+Final Checks:
+
+- Ensure all cables are securely connected, with no loose ends.
+- If issues persist, you may need to reconfigure the router from scratch to resolve the problem.
+
 
 3. Making IP assignments more clear and concise
    As I have done so in the step-by-step configuration guide, it is good practice to make a table of all the devices in a network and assigning the IP/subnet masks beforehand. By doing this, it eradicated human error as well as being able to identify the IPs of each specific device easily. Further, a common mistake occurs when one forgets to leave the first IP address open for the default gateway. By creating a table, you are able to account for this beforehand and eradicate this mistake.
