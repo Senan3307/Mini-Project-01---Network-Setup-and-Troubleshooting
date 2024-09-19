@@ -57,7 +57,7 @@ Ethernet Cables – For connecting devices to switches and routers.c.
   
   IPs are essential in identifying each device as well as allowing them to communicate with other devices. However, one of the most common issues with assigning IPs is IP address conflicts where two or more devices have the same IP. To prevent this, it would be most efficient to assign IPs beforehand to minimize confusion and human error. 
   
-  For this project, networks 192.168.0.0/26 and 172.16.0.0/24 have been assigned. 
+  For this project, networks 192.168.0.0/26 and 172.16.0.0/24 have been assigned. As you can see, the first IP for both networks are for the default gateways. 
   
 Device  | IP  | Default Gatway | Subnet Mask
 ------------- | ------------- | -------------- | ------------
