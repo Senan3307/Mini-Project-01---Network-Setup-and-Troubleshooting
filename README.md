@@ -30,6 +30,17 @@ Benefits:
 - Enables remote work and global collaboration.
 - Provides centralized data storage, management, and security.
 
+Telecom Companies
+
+Telecom companies rely on extensive global networks to provide internet, phone, and television services to consumers.
+
+Example: A telecom provider like AT&T connects customers through fiber-optic networks and satellite links to offer internet, phone, and TV services.
+
+Benefits:
+- Reliable and fast communication services.
+- Global connectivity for users through mobile and internet services.
+- Scalability to meet increasing demand for bandwidth.
+
 **1. Choose software and hardware**
   
 To achieve the objective of connecting multiple LANs and establishing communication between devices, the following components are required:
@@ -135,42 +146,13 @@ To do this, go to terminal and type "ping [any IP from another LAN]". If you get
 
 # FAQ 
 
-1. How do I check if my devices are successfully connected to a LAN?
+1. What do I do to check if my devices are successfully connected to a LAN?
 
-  To verify if your devices are connected to a Local Area Network (LAN), follow these steps:
+   Try to ping the other device using "terminal" if operating on a mac. On terminal, type "ping [IP address]" and if you get a response detailing ping, your device is successfully connected to the LAN. If the ping times out, check to see if the ethernet cables are securely connected to the switch and devices. If those are connected as well, check to see if the IP and subnet mask are configured properly on each device. There may be a typo error with the numbers or you may have made an error with the subnet mask. By configuring these correctly and ensuring the ethernet cables are connected, the devices should be able to communicate with each other.
 
-  On a Mac:
+2. I can't connect my devices across different LANs. What do I do?
 
-- Open the Terminal application.
-- Type the command: ping [IP address] (replace [IP address] with the target device’s IP).
-- If you receive a series of responses indicating the ping is successful, your device is connected to the LAN.
-- If the ping times out or no response is received, check the following:
-  - Ensure all Ethernet cables are securely connected to both the switch and the devices.
-  - Verify that the IP address and subnet mask are correctly configured on each device. Double-check for typos, especially in the numbers or subnet mask settings.
-
-  By ensuring proper configuration and securely connected hardware, devices should communicate successfully on the LAN.
-
-2. Why can’t I connect my devices across different LANs?
-
-  If devices across different LANs cannot connect, follow these troubleshooting steps:
-
-  Check the Router:
-
-- Ensure the router is powered on (look for an on-off switch).
-- Verify that the Ethernet cables are properly connected to the correct gigabit ports on the router.
-- Review IP Configuration:
-
-  Make sure the router has been correctly configured with a specific default gateway IP for each port.
-- Recheck the IP values for any potential typos or configuration errors.
-- Default Gateway Assignment:
-
-  Confirm that the default gateway has been correctly assigned on all end devices.
-
-  Final Checks:
-
-- Ensure all cables are securely connected, with no loose ends.
-- If issues persist, you may need to reconfigure the router from scratch to resolve the problem.
-
+   First, check to make sure the router is turned on. There should an on-off switch. If that's not the issue, make sure the ethernet cables are connected to the right gigabit ports. When configuring the router, you should have configured a specific port with a specific default gateway IP. You may also want to carefully check the IP values again to see if there are no typos. You also want to check if the default gateway is assigned on each of your end devices. Finally, if that is not the case make sure all the cables are securely connected with no loose ends and if this is not the issue you may have to reconfigure the router.
 
 3. Making IP assignments more clear and concise
    As I have done so in the step-by-step configuration guide, it is good practice to make a table of all the devices in a network and assigning the IP/subnet masks beforehand. By doing this, it eradicated human error as well as being able to identify the IPs of each specific device easily. Further, a common mistake occurs when one forgets to leave the first IP address open for the default gateway. By creating a table, you are able to account for this beforehand and eradicate this mistake.
