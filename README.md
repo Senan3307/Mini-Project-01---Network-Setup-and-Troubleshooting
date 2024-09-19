@@ -135,8 +135,20 @@ To do this, go to terminal and type "ping [any IP from another LAN]". If you get
 
 # FAQ 
 
-1. What do I do to check if my devices are successfully connected to a LAN?
-   Try to ping the other device using "terminal" if operating on a mac. On terminal, type "ping [IP address]" and if you get a response detailing ping, your device is successfully connected to the LAN. If the ping times out, check to see if the ethernet cables are securely connected to the switch and devices. If those are connected as well, check to see if the IP and subnet mask are configured properly on each device. There may be a typo error with the numbers or you may have made an error with the subnet mask. By configuring these correctly and ensuring the ethernet cables are connected, the devices should be able to communicate with each other.
+1. How do I check if my devices are successfully connected to a LAN?
+
+To verify if your devices are connected to a Local Area Network (LAN), follow these steps:
+
+On a Mac:
+
+- Open the Terminal application.
+- Type the command: ping [IP address] (replace [IP address] with the target device’s IP).
+- If you receive a series of responses indicating the ping is successful, your device is connected to the LAN.
+- If the ping times out or no response is received, check the following:
+  - Ensure all Ethernet cables are securely connected to both the switch and the devices.
+  - Verify that the IP address and subnet mask are correctly configured on each device. Double-check for typos, especially in the numbers or subnet mask settings.
+
+By ensuring proper configuration and securely connected hardware, devices should communicate successfully on the LAN.
 
 2. I can't connect my devices across different LANs. What do I do?
    First, check to make sure the router is turned on. There should an on-off switch. If that's not the issue, make sure the ethernet cables are connected to the right gigabit ports. When configuring the router, you should have configured a specific port with a specific default gateway IP. You may also want to carefully check the IP values again to see if there are no typos. You also want to check if the default gateway is assigned on each of your end devices. Finally, if that is not the case make sure all the cables are securely connected with no loose ends and if this is not the issue you may have to reconfigure the router.
